@@ -4,5 +4,6 @@ declare @highgpa decimal(7,2) = 3.5;
 select *
 	from Student
 	where GPA >= @lowgpa
-	and GPA <= @highgpa;
+	and GPA <= @highgpa
+	order by GPA desc;
 	
